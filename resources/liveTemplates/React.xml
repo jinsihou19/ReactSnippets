@@ -1,0 +1,136 @@
+<templateSet group="React">
+  <template name="rcc" value="import React, { Component } from 'react';&#10;&#10;class $componentName$ extends Component {&#10;    &#10;    render() {&#10;        return (&#10;            &lt;div&gt;&#10;                $END$&#10;            &lt;/div&gt;&#10;        );&#10;    }&#10;}&#10;&#10;export default $componentName$;&#10;" description="Creates a React component class with ES6 module system" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rccp" value="import React, { Component } from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;class $componentName$ extends Component {&#10;    render() {&#10;        return (&#10;            &lt;div&gt;&#10;                $END$&#10;            &lt;/div&gt;&#10;        );&#10;    }&#10;}&#10;&#10;$componentName$.propTypes = {&#10;&#10;};&#10;&#10;export default $componentName$;&#10;" description="Creates a React component class with PropTypes and ES6 module system" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="con" value="constructor(props) {&#10;    super(props);&#10;    $END$&#10;}&#10;" description="Adds a default constructor for the class that contains props as arguments" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rrc" value="import React, { Component } from 'react';&#10;import { connect } from 'react-redux';&#10;   &#10;class $componentName$ extends Component {&#10;    render() {&#10;        return (&#10;            &lt;div&gt;&#10;                $END$&#10;            &lt;/div&gt;&#10;        );&#10;    }&#10;}&#10; &#10;function mapStateToProps(state) {&#10;    return {&#10;    &#10;    };&#10;}   &#10;    &#10;export default connect(&#10;    mapStateToProps,&#10;)($componentName$);&#10;" description="Creates a React component class connected to redux" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rcfc" value="import React, { Component } from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;class $componentName$ extends Component {&#10;    constructor(props) {&#10;        super(props);&#10;    }&#10;    &#10;    componentWillMount() {&#10;    &#10;    }&#10;    &#10;    componentDidMount() {&#10;    &#10;    }&#10;    &#10;    componentWillReceiveProps(nextProps) {&#10;    &#10;    }&#10;    &#10;    shouldComponentUpdate(nextProps, nextState) {&#10;    &#10;    }&#10;    &#10;    componentWillUpdate(nextProps, nextState) {&#10;    &#10;    }&#10;    &#10;    componentDidUpdate(prevProps, prevState) {&#10;    &#10;    }&#10;    &#10;    componentWillUnmount() {&#10;    &#10;    }&#10;    &#10;    render() {&#10;        return (&#10;            &lt;div&gt;&#10;                $END$&#10;            &lt;/div&gt;&#10;        );&#10;    }&#10;}&#10;&#10;$componentName$.propTypes = {&#10;&#10;};&#10;&#10;export default $componentName$;&#10;" description="Creates a React component class with PropTypes and all lifecycle methods and ES6 module system" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rsc" value="import React from 'react';&#10;&#10;const $componentName$ = () =&gt; {&#10;    return (&#10;        &lt;div&gt;&#10;            $END$&#10;        &lt;/div&gt;&#10;    );&#10;};&#10;&#10;export default $componentName$;&#10;" description="Creates a stateless React component without PropTypes and ES6 module system" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rscp" value="import React from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;const $componentName$ = props =&gt; {&#10;    return (&#10;        &lt;div&gt;&#10;            &#10;        &lt;/div&gt;&#10;    );&#10;};&#10;&#10;$componentName$.propTypes = {&#10;    $END$&#10;};&#10;&#10;export default $componentName$;&#10;" description="Creates a stateless React component with PropTypes and ES6 module system" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="conc" value="constructor(props, context) {&#10;    super(props, context);&#10;    $END$&#10;}&#10;" description="Adds a default constructor for the class that contains props and context as arguments" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cwm" value="&#10;componentWillMount() {&#10;    $END$&#10;}&#10;" description="Invoked once, both on the client and server, immediately before the initial rendering occurs" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cdm" value="&#10;componentDidMount() {&#10;    $END$&#10;}&#10;" description="Invoked once, only on the client (not on the server), immediately after the initial rendering occurs." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cwr" value="&#10;componentWillReceiveProps(nextProps) {&#10;    $END$&#10;}&#10;" description="Invoked when a component is receiving new props. This method is not called for the initial render." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="scu" value="&#10;shouldComponentUpdate(nextProps, nextState) {&#10;    $END$&#10;}&#10;" description="Invoked before rendering when new props or state are being received." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cwup" value="&#10;componentWillUpdate(nextProps, nextState) {&#10;    $END$&#10;}&#10;" description="Invoked immediately before rendering when new props or state are being received." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cdup" value="&#10;componentDidUpdate(prevProps, prevState) {&#10;    $END$&#10;}&#10;" description="Invoked immediately after the component's updates are flushed to the DOM." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cwun" value="&#10;componentWillUnmount() {&#10;    $END$&#10;}&#10;" description="Invoked immediately before a component is unmounted from the DOM." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ren" value="&#10;render() {&#10;    return (&#10;        &lt;div&gt;&#10;            $END$&#10;        &lt;/div&gt;&#10;    );&#10;}&#10;" description="When called, it should examine this.props and this.state and return a single child element." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="bind" value="this.$FUNC$ = this.$FUNC$.bind(this);$END$" description="Binds the this of a method. To be used inside a constructor" toReformat="true" toShortenFQNames="true">
+    <variable name="FUNC" expression="" defaultValue="&quot;handleChange&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="pt" value="$componentName$.propTypes = {&#10;    $END$&#10;};&#10;" description="Creates empty propTypes declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
