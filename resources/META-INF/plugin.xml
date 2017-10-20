@@ -1,98 +1,17 @@
 <idea-plugin>
     <id>com.jinsihou.react.snippets</id>
     <name>React snippets</name>
-    <version>0.1</version>
+    <version>1.0.0</version>
     <vendor email="jinsihou.1992@qq.com">jinsihou</vendor>
 
     <description><![CDATA[
       Live Templates For React<br>
-      <table>
-        <thead>
-        <tr>
-        <th style="text-align: right">Trigger</th>
-        <th>Content</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <tr>
-        <td style="text-align: right"><code>rcc→</code></td>
-        <td>class component skeleton</td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>rrc→</code></td>
-        <td>class component skeleton with react-redux connect</td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>rccp→</code></td>
-        <td>class component skeleton with prop types after the class</td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>rcfc→</code></td>
-        <td>class component skeleton that contains all the lifecycle methods</td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>rsc→</code></td>
-        <td>stateless component skeleton</td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>rscp→</code></td>
-        <td>stateless component with prop types skeleton</td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>pt→</code></td>
-        <td>empty propTypes declaration</td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>con→</code></td>
-        <td>class default constructor with props</td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>conc→</code></td>
-        <td>class default constructor with props and context</td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>cwm→</code></td>
-        <td><code>componentWillMount method</code></td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>cdm→</code></td>
-        <td><code>componentDidMount method</code></td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>cwr→</code></td>
-        <td><code>componentWillReceiveProps method</code></td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>scu→</code></td>
-        <td><code>shouldComponentUpdate method</code></td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>cwup→</code></td>
-        <td><code>componentWillUpdate method</code></td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>cdup→</code></td>
-        <td><code>componentDidUpdate method</code></td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>cwun→</code></td>
-        <td><code>componentWillUnmount method</code></td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>ren→</code></td>
-        <td><code>render method</code></td>
-        </tr>
-        <tr>
-        <td style="text-align: right"><code>bind→</code></td>
-        <td><code>binds the this of method inside the constructor</code></td>
-        </tr>
-        </tbody>
-      </table>
+      Show details in Preferences -> Editor -> Live Templates -> React Group.
     ]]></description>
 
     <change-notes><![CDATA[
-      null<br>
+      <strong>v1.0.0</strong> <br/>
+      <li> Add all the snippets that can be used for prop types.</li>
     ]]>
     </change-notes>
 

@@ -1,12 +1,4 @@
 <templateSet group="React">
-  <template name="rcc" value="import React, { Component } from 'react';&#10;&#10;class $componentName$ extends Component {&#10;    &#10;    render() {&#10;        return (&#10;            &lt;div&gt;&#10;                $END$&#10;            &lt;/div&gt;&#10;        );&#10;    }&#10;}&#10;&#10;export default $componentName$;&#10;" description="Creates a React component class with ES6 module system" toReformat="true" toShortenFQNames="true">
-    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="HTML" value="true" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
   <template name="rccp" value="import React, { Component } from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;class $componentName$ extends Component {&#10;    render() {&#10;        return (&#10;            &lt;div&gt;&#10;                $END$&#10;            &lt;/div&gt;&#10;        );&#10;    }&#10;}&#10;&#10;$componentName$.propTypes = {&#10;&#10;};&#10;&#10;export default $componentName$;&#10;" description="Creates a React component class with PropTypes and ES6 module system" toReformat="true" toShortenFQNames="true">
     <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
     <context>
@@ -110,7 +102,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="ren" value="&#10;render() {&#10;    return (&#10;        &lt;div&gt;&#10;            $END$&#10;        &lt;/div&gt;&#10;    );&#10;}&#10;" description="When called, it should examine this.props and this.state and return a single child element." toReformat="false" toShortenFQNames="true">
+  <template name="ren" value="&#10;render() {&#10;    return (&#10;        &lt;div&gt;&#10;            $END$&#10;        &lt;/div&gt;&#10;    );&#10;}&#10;" description="When called, it should examine this.props and this.state and return a single child element." toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
       <option name="JAVA_SCRIPT" value="true" />
@@ -127,6 +119,209 @@
   </template>
   <template name="pt" value="$componentName$.propTypes = {&#10;    $END$&#10;};&#10;" description="Creates empty propTypes declaration" toReformat="false" toShortenFQNames="true">
     <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ssf" value="&#10;this.setState((state, props) =&gt; { &#10;    return {&#10;        $END$ &#10;    }&#10;});&#10;" description="Performs a shallow merge of nextState into current state" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="pta" value="PropTypes.array," description="Array prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptar" value="PropTypes.array.isRequired," description="Array prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptb" value="PropTypes.bool," description="Bool prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptbr" value="PropTypes.bool.isRequired," description="Bool prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptf" value="PropTypes.func," description="Func prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptfr" value="PropTypes.func.isRequired," description="Func prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptn" value="PropTypes.number," description="Number prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptnr" value="PropTypes.number.isRequired," description="Number prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="pto" value="PropTypes.object," description="Object prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptor" value="PropTypes.object.isRequired," description="Object prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="pts" value="PropTypes.string," description="String prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptsr" value="PropTypes.string.isRequired," description="String prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptnd" value="PropTypes.node," description="Anything that can be rendered: numbers, strings, elements or an array" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptndr" value="PropTypes.node.isRequired," description="Anything that can be rendered: numbers, strings, elements or an array required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptel" value="PropTypes.element," description="React element prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptelr" value="PropTypes.element.isRequired," description="React element prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="pti" value="PropTypes.instanceOf($END$)," description="Is an instance of a class prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptir" value="PropTypes.instanceOf($0).isRequired," description="Is an instance of a class prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="pte" value="PropTypes.oneOf(['$END$'])," description="Prop type limited to specific values by treating it as an enum" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="pter" value="PropTypes.oneOf(['$END$']).isRequired," description="Prop type limited to specific values by treating it as an enum required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptet" value="PropTypes.oneOfType([&#10;    $END$&#10;])," description="An object that could be one of many types" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptetr" value="PropTypes.oneOfType([&#10;    $END$&#10;]).isRequired," description="An object that could be one of many types required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptao" value="PropTypes.arrayOf($END$)," description="An array of a certain type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptaor" value="PropTypes.arrayOf($END$).isRequired," description="An array of a certain type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptoo" value="PropTypes.objectOf($END$)," description="An object with property values of a certain type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptoor" value="PropTypes.objectOf($END$).isRequired," description="An object with property values of a certain type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptsh" value="PropTypes.shape({&#10;    $END$&#10;})," description="An object taking on a particular shape" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptshr" value="PropTypes.shape({&#10;    $END$&#10;}).isRequired," description="An object taking on a particular shape required" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
       <option name="JAVA_SCRIPT" value="true" />
