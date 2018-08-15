@@ -18,15 +18,15 @@ Live Templates for React in IntelliJ products webstorm and idea.
 | `pt` | empty propTypes declaration |
 | `con` | class default constructor with props |
 | `conc` | class default constructor with props and context |
-| `cwm` | `componentWillMount method` |
-| `cdm` | `componentDidMount method` |
-| `cwr` | `componentWillReceiveProps method` |
-| `scu` | `shouldComponentUpdate method` |
-| `cwup` | `componentWillUpdate method` |
-| `cdup` | `componentDidUpdate method` |
-| `cwun` | `componentWillUnmount method` |
-| `ren` | `render method` |
-| `bind` | `binds the this of method inside the constructor` |
+| `cwm` | `componentWillMount` method |
+| `cdm` | `componentDidMount` method |
+| `cwr` | `componentWillReceiveProps` method |
+| `scu` | `shouldComponentUpdate` method |
+| `cwup` | `componentWillUpdate` method |
+| `cdup` | `componentDidUpdate` method |
+| `cwun` | `componentWillUnmount` method |
+| `ren` | `render` method |
+| `bind` | binds the `this` of method inside the constructor |
 
 Add all the snippets that can be used for prop types.
 
@@ -40,7 +40,7 @@ Add all the snippets that can be used for prop types.
 | `ptfr` | `PropTypes.func.isRequired,` |
 | `ptn` | `PropTypes.number,` |
 | `ptnr` | `PropTypes.number.isRequired,` |
-| `pto` | `PropTypes.object.,` |
+| `pto` | `PropTypes.object,` |
 | `ptor` | `PropTypes.object.isRequired,` |
 | `pts` | `PropTypes.string,` |
 | `ptsr` | `PropTypes.string.isRequired,` |
