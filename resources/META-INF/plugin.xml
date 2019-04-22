@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.jinsihou.react.snippets</id>
     <name>React snippets</name>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <vendor email="jinsihou.1992@qq.com">jinsihou</vendor>
 
     <description><![CDATA[
@@ -10,6 +10,12 @@
     ]]></description>
 
     <change-notes><![CDATA[
+      <strong>v1.1.0</strong> <br/>
+      <li> Supported react 16.8.0 hooks</li>
+      <li> add cref snippet</li>
+      <li> add cctx snippet</li>
+      <li> add hoc snippet</li>
+      <br/>
       <strong>v1.0.0</strong> <br/>
       <li> Add all the snippets that can be used for prop types.</li>
     ]]>
