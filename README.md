@@ -1,14 +1,14 @@
 # ReactSnippets
 Live Templates for React in IntelliJ products webstorm and idea.
 
-![react_snippets](http://otanw1k5t.bkt.clouddn.com/react_snippets.gif)
+![react_snippets](images/3.gif)
 
-![react_snippets](http://otanw1k5t.bkt.clouddn.com/react_snippets1.png)
+![react_snippets](images/1.jpg)
 
-![react_snippets](http://otanw1k5t.bkt.clouddn.com/react_snippets2.png)
+![react_snippets](images/2.jpg)
 
 | Trigger | Content |
-| --: | --- |
+| --- | --- |
 | `rcc` | class component skeleton |
 | `rrc` | class component skeleton with react-redux connect |
 | `rccp` | class component skeleton with prop types after the class |
@@ -27,6 +27,9 @@ Live Templates for React in IntelliJ products webstorm and idea.
 | `cwun` | `componentWillUnmount` method |
 | `ren` | `render` method |
 | `bind` | binds the `this` of method inside the constructor |
+| `hoc` | higher-order component |
+| `cref` | creates a ref. |
+| `cctx` | creates a context |
 
 Add all the snippets that can be used for prop types.
 
@@ -60,3 +63,7 @@ Add all the snippets that can be used for prop types.
 | `ptoor` | `PropTypes.objectOf(PropTypes.number).isRequired,` |
 | `ptsh` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),` |
 | `ptshr` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
+
+Hooks
+
+All hooks from [official docs](https://reactjs.org/docs/hooks-reference.html) are supported with hook name prefix.
