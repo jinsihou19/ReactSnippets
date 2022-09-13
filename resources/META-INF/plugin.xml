@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.jinsihou.react.snippets</id>
     <name>React snippets</name>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <vendor email="jinsihou.1992@qq.com">jinsihou</vendor>
 
     <description><![CDATA[
@@ -10,6 +10,8 @@
     ]]></description>
 
     <change-notes><![CDATA[
+      <strong>v1.1.1</strong> <br/>
+      <li>Migrate deprecated APIs to support hot deployment</li>
       <strong>v1.1.0</strong> <br/>
       <li> Supported react 16.8.0 hooks</li>
       <li> add cref snippet</li>
@@ -22,7 +24,7 @@
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-    <idea-version since-build="145.0"/>
+    <idea-version since-build="202.6397.94"/>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
@@ -33,7 +35,8 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <defaultLiveTemplatesProvider implementation="com.jinsihou.react.snippets.ReactTemplateProvider"/>
+        <defaultLiveTemplates file="/liveTemplates/React.xml"/>
+        <liveTemplateContext implementation="com.jinsihou.react.snippets.ReactTemplateProvider"/>
     </extensions>
 
     <actions>
